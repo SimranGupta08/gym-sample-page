@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EliteFit Gym</title>
+
+<!-- Animate on Scroll -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  background:#f6f1eb;
+  color:#3e342c;
+}
+
+/* HEADER */
+header{
+  background:#efe6dc;
+  padding:20px 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h1{
+  font-size:26px;
+}
+
+nav a{
+  margin-left:30px;
+  text-decoration:none;
+  color:#3e342c;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  padding:100px 80px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.hero h2{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.hero button{
+  padding:14px 28px;
+  background:#3e342c;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.hero img{
+  width:100%;
+  border-radius:18px;
+}
+
+/* SECTION */
+section{
+  padding:80px;
+}
+
+/* FEATURES */
+.features{
+  background:#fff;
+  text-align:center;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  margin-top:40px;
+}
+
+.card{
+  background:#f6f1eb;
+  padding:30px;
+  border-radius:14px;
+}
+
+/* GALLERY */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.gallery-grid img{
+  width:100%;
+  border-radius:14px;
+}
+
+/* CONTACT */
+.contact-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+form input, form textarea{
+  width:100%;
+  padding:14px;
+  margin-bottom:20px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+form button{
+  background:#3e342c;
+  color:#fff;
+  padding:14px;
+  border:none;
+  width:100%;
+  font-size:16px;
+  border-radius:8px;
+}
+
+/* MAP */
+iframe{
+  width:100%;
+  height:300px;
+  border-radius:14px;
+}
+
+/* CTA */
+.cta{
+  background:#3e342c;
+  color:white;
+  text-align:center;
+}
+
+.cta button{
+  background:white;
+  color:#3e342c;
+  padding:14px 28px;
+  border:none;
+  font-size:16px;
+  border-radius:6px;
+}
+
+/* FOOTER */
+footer{
+  background:#efe6dc;
+  text-align:center;
+  padding:30px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  header,section{
+    padding:40px 30px;
+  }
+  .hero,.contact-box{
+    grid-template-columns:1fr;
+  }
+  .feature-grid,.gallery-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>EliteFit Gym</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div data-aos="fade-right">
+    <h2>Transform Your Body. Build Your Strength.</h2>
+    <p>Join our premium gym with certified trainers, modern equipment, and affordable monthly plans starting from ₹999.</p>
+    <button>Join Now</button>
+  </div>
+  <img data-aos="fade-left" src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1">
+</div>
+
+<!-- FEATURES -->
+<section class="features" id="services">
+<h2 data-aos="fade-up">Why Choose EliteFit?</h2>
+<div class="feature-grid">
+  <div class="card" data-aos="zoom-in">
+    <h3>Certified Trainers</h3>
+    <p>Personal training & fat-loss programs.</p>
+  </div>
+  <div class="card" data-aos="zoom-in">
+    <h3>Flexible Plans</h3>
+    <p>Monthly & yearly packages starting ₹999.</p>
+  </div>
+  <div class="card" data-aos="zoom-in">
+    <h3>Modern Equipment</h3>
+    <p>Latest machines for all workouts.</p>
+  </div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2 data-aos="fade-up">Our Gym Gallery</h2>
+<div class="gallery-grid">
+  <img data-aos="fade-up" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48">
+  <img data-aos="fade-up" src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+  <img data-aos="fade-up" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 data-aos="fade-up">Contact Us</h2>
+<div class="contact-box">
+  <form data-aos="fade-right">
+    <input type="text" placeholder="Your Name">
+    <input type="tel" placeholder="Phone Number">
+    <textarea rows="5" placeholder="Message"></textarea>
+    <button>Send Enquiry</button>
+  </form>
+
+  <div data-aos="fade-left">
+    <h3>Visit Our Gym</h3>
+    <iframe src="https://www.google.com/maps?q=Mumbai&output=embed"></iframe>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2 data-aos="zoom-in">Start Your Fitness Journey Today</h2>
+  <p>Affordable | Professional | Trusted</p><br>
+  <button>Call Now</button>
+</section>
+
+<footer>
+© 2026 EliteFit Gym. All Rights Reserved.
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/919999999999" target="_blank">
+Chat on WhatsApp
+</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>
