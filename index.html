@@ -248,20 +248,24 @@ footer{
 
 <!-- CONTACT -->
 <section id="contact">
-<h2 data-aos="fade-up">Contact Us</h2>
-<div class="contact-box">
-  <form data-aos="fade-right">
-    <input type="text" placeholder="Your Name">
-    <input type="tel" placeholder="Phone Number">
-    <textarea rows="5" placeholder="Message"></textarea>
-    <button>Send Enquiry</button>
-  </form>
+  <h2>Contact Us</h2>
+
+    <!-- 👇 YAHI paste karo -->
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" placeholder="Message"></textarea>
+
+      <button type="submit">Send Enquiry</button>
+    </form>
+
 
   <div data-aos="fade-left">
     <h3>Visit Our Gym</h3>
     <iframe src="https://www.google.com/maps?q=Mumbai&output=embed"></iframe>
   </div>
-</div>
 </section>
 
 <!-- CTA -->
